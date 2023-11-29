@@ -1,0 +1,131 @@
+* {
+    padding: 0 0;
+    margin: 0 0;
+    font-size: 5vh;
+    color: black;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: black;
+}
+
+.player, .cpu {
+    width: 5vw;
+    height: 5vh;
+    position: fixed;
+    z-index: 99;
+    background-color: #9B9067;
+    font-weight: bold;
+    box-sizing: border-box;
+    border: .15rem dashed black;
+}
+
+.player, .cpu, .npc {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.banner {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    width: 60vw;
+    height: 60vh;
+    top: 20vh;
+    left: 20vw;
+    background-color: black;
+    border: 1rem solid #9B9067;
+    color: lightgray;
+    opacity: 0.9;
+    z-index: 10000;
+}
+
+.banner div {
+    color: lightgray;
+    text-align: center;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.story {
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: 15000;
+    background-color: black;
+    color: lightgray;
+    font-size: xx-large;
+}
+
+.story div, .story p {
+    color: lightgray;
+    margin: 0 10vw;
+}
+
+#playerLeft {
+}
+
+#playerRight {
+}
+
+.npc {
+    background-color: #CBCDAD;
+    width: 5vw;
+    height: 5vh;
+    position: fixed;
+    top: 20vh;
+    left: 30vw;
+}
+
+.canvas {
+    height: 100%;
+    width: 100%;
+}
+
+#bgDivs {
+    z-index: 0
+}
+
+#characters {
+    z-index: 50;
+}
+
+#characters div {
+    z-index: 99;
+}
+
+.side {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    background-color: black;
+    display: none;
+}
+
+#leftside {
+    left: 0;
+}
+
+#rightside {
+    right: 0;
+}
+
+cite {
+    color: lightgray;
+    font-style: italic;
+}
